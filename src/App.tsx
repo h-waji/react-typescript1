@@ -25,7 +25,7 @@ export default function App() {
       <h1>Hello!</h1>
       <button onClick={onClickFetchData}>FetchData</button>
       {todos.map((todo) => (
-        <Todo title={todo.title} userid={todo.userId} />
+        <Todo title={todo.title} userId={todo.userId} completed={todo.completed} />
       ))}
     </div>
   );
